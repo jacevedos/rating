@@ -6,37 +6,44 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   
-  <title>Frontend Mentor | Product preview card component</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
 
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Rating state start -->
   <section class="main">
-    <article class="card">
-      <div class="product-img"></div>
-      <div class="description">
-        <div class="elements">
-          <h4>PERFUME</h4>
-          <h1>Gabrielle Essence Eau De Parfum</h1>
-          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-            Perfumer-Creator for the House of CHANEL.</p>
-          <div class="price">
-            <h2>$149.99</h2>
-            <h5>$169.99</h5>
-          </div>
-          <button>
-            <div class="price-btn">
-              <svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg>  
-              <h2>Add to Cart</h2>
-            </div>
-          </button>
-        </div>
+    <article class="component">
+      <div class="icon">
+        <svg width="17" height="16" xmlns="http://www.w3.org/2000/svg"><path d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z" fill="#FC7614"/></svg>
       </div>
+      <h2>How did we do?</h2>
+      <p>Please let us know how we did with your support request. All feedback is appreciated 
+        to help us improve our offering!</p>
+      <section class="rating">
+        <div id="rating-1">1</div>
+        <div id="rating-2">2</div>
+        <div id="rating-3">3</div>
+        <div id="rating-4">4</div>
+        <div id="rating-5">5</div>
+      </section>
+      <input type="submit" value="SUBMIT" id="submit">
     </article>
   </section>
+  
+  <article class="component none modal">
+    <img src="assets/illustration-thank-you.svg" alt="Thank Illustration">
+    <div class="score">You selected 4 out of 5</div>
+    <h2>Thank you!</h2>
+    <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+  </article>
+
 
   <footer class="footer">
     <div class="attribution">
@@ -44,6 +51,8 @@
       Coded by <a href="#">Juan Jose Acevedo Serna</a>.
     </div>
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
